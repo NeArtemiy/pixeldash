@@ -83,6 +83,7 @@ function editeItem()
                 elemnt.style.boxShadow = `0 0 2px ${activeColor}, 0 0 10px ${activeColor}`
             else
                 elemnt.style.boxShadow = '0 0 0 0';
+            playSound()
         });
         elemnt.addEventListener('mouseover', () => {
             if(flagClick == true){
@@ -94,6 +95,14 @@ function editeItem()
             }
         });
     });
+}
+function playSound(){
+    var player = new Audio('sound.wav');
+    player.preload = "auto";
+    player.play();
+    player.playbackRate = 1.15;
+    player.volume = 0.15;
+    console.log('great');
 }
 
 inputY.addEventListener('input', () => {
