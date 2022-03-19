@@ -100,8 +100,8 @@ function playSound(){
     var player = new Audio('sound.wav');
     player.preload = "auto";
     player.play();
-    player.playbackRate = 1.15;
-    player.volume = 0.15;
+    player.playbackRate = 1.1;
+    player.volume = 0.05;
     console.log('great');
 }
 
